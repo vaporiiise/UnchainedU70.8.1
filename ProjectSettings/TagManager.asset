@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerAttack
+  - Obstacles
+  - ObjToPush
+  - RemovableDoor
+  - T1
+  - T2
+  - triggerTag2
+  - triggerTag1
+  - BossAttack
+  - PlayerBullet
+  - EnemyBullet
+  - ButtonTrigger
+  - Enemy
+  - PlayerParry
+  - Wall
+  - BossRoom
+  - Lock
+  - Door
+  - Dialogue
+  - ObjToBlock
+  - Dialogue1
+  - Dialogue2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Enemy
+  - Armour
+  - UI 2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Armour
+    uniqueID: 1771557779
+    locked: 0
+  - name: FadeArea
+    uniqueID: 3145981867
+    locked: 0
+  - name: LitUpLights
+    uniqueID: 3014739267
+    locked: 0

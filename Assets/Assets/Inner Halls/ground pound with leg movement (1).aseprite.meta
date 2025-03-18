@@ -1,0 +1,1299 @@
+fileFormatVersion: 2
+guid: 1a5b0afe6fb78994c8cf2dfaf950294b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: ground pound with leg movement (1)_Frame_0
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 15e08ff068d74d84d92435eb6f6cc6c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_1
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 423
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: b4c5d9d7c09d9a44bb7756e8f6aee514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 423, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_2
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 842
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 60507680c60234f4aa204cf6ffe38291
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 842, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_3
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 1357
+      width: 411
+      height: 244
+    spriteID: d1337f03b83540b42ae5bac9752f9b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 1357}
+  - name: ground pound with leg movement (1)_Frame_4
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1864
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 35a39f96c5ba873408b3735e052b18da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1864, y: 4}
+  - name: ground pound with leg movement (1)_Frame_5
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2344
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 33518be7bdaaa2f4997731ed87a6e5f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2344, y: 4}
+  - name: ground pound with leg movement (1)_Frame_6
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2824
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 304ccb83446548d479c1c3a4c6cef239
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2824, y: 4}
+  - name: ground pound with leg movement (1)_Frame_7
+    originalName: 
+    pivot: {x: 0.68682504, y: -0.033536583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1393
+      y: 4
+      width: 463
+      height: 328
+    spriteID: 9ac9dc7ff6a855b408acb857fbb2f307
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1393, y: 4}
+  - name: ground pound with leg movement (1)_Frame_8
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 455
+      height: 335
+    spriteID: 666b29340a2581142933b7905cb7bd4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: ground pound with leg movement (1)_Frame_9
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 467
+      y: 4
+      width: 455
+      height: 335
+    spriteID: 8b9e088801a14dc47ad63ec343b44086
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 467, y: 4}
+  - name: ground pound with leg movement (1)_Frame_10
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 4
+      width: 455
+      height: 335
+    spriteID: aaaac5cdce4cd004ca7481ce810ee28a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 4}
+  - name: ground pound with leg movement (1)_Frame_11
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3304
+      y: 4
+      width: 568
+      height: 238
+    spriteID: 857be5109014d4445a4e47f170387976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3304, y: 4}
+  - name: ground pound with leg movement (1)_Frame_12
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 839
+      width: 568
+      height: 218
+    spriteID: 2362fd79c3546c244b2495b6e6e5a092
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 839}
+  - name: ground pound with leg movement (1)_Frame_13
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1660
+      y: 839
+      width: 568
+      height: 218
+    spriteID: 5db7c16ab4c162b4ebe41f5432817e06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1660, y: 839}
+  - name: ground pound with leg movement (1)_Frame_14
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2236
+      y: 839
+      width: 568
+      height: 218
+    spriteID: 8ddb61b39a56ee147b73288b5077ea1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2236, y: 839}
+  - name: ground pound with leg movement (1)_Frame_15
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04910714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2873
+      y: 593
+      width: 568
+      height: 224
+    spriteID: 46bdf2951fab8b643af089e53637268c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2873, y: 593}
+  - name: ground pound with leg movement (1)_Frame_16
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 01a7a4e29882b124b91f5e570a49417e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 347}
+  - name: ground pound with leg movement (1)_Frame_17
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 347
+      width: 568
+      height: 238
+    spriteID: df000e2bf2d66254082416259c0d2aa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 347}
+  - name: ground pound with leg movement (1)_Frame_18
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1156
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 0c81ee94c63785846a66b5aa092573f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1156, y: 347}
+  - name: ground pound with leg movement (1)_Frame_19
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04761905}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2297
+      y: 593
+      width: 568
+      height: 231
+    spriteID: 6bda5c409802e16468b0adee29fd62c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2297, y: 593}
+  - name: ground pound with leg movement (1)_Frame_20
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 347
+      width: 568
+      height: 238
+    spriteID: ef951319bddd8324cbe9330eb1e7cb24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 347}
+  - name: ground pound with leg movement (1)_Frame_21
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2308
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 7a514239bc218f64d965304be4eaa9fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2308, y: 347}
+  - name: ground pound with leg movement (1)_Frame_22
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2884
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 92b7efa3e3a4572418491ad0a70a4f58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2884, y: 347}
+  - name: ground pound with leg movement (1)_Frame_23
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3460
+      y: 347
+      width: 568
+      height: 238
+    spriteID: c47970d903af5804e89783537df17ea0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3460, y: 347}
+  - name: ground pound with leg movement (1)_Frame_24
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 593
+      width: 568
+      height: 238
+    spriteID: 73d1cb2910b55f4449666ad303c953f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 593}
+  - name: ground pound with leg movement (1)_Frame_25
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 593
+      width: 568
+      height: 238
+    spriteID: d3a76f655f35d6840ac213b72eea2a62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 593}
+  - name: ground pound with leg movement (1)_Frame_26
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1156
+      y: 593
+      width: 568
+      height: 238
+    spriteID: d3c3cc893b65764409737d3649c15f86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1156, y: 593}
+  - name: ground pound with leg movement (1)_Frame_27
+    originalName: 
+    pivot: {x: 0.5709156, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 593
+      width: 557
+      height: 238
+    spriteID: 0cc57c63f65ffa34499cabbc47ce5860
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 593}
+  - name: ground pound with leg movement (1)_Frame_28
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3449
+      y: 593
+      width: 532
+      height: 238
+    spriteID: b2732477a93ff2d4e9e87cbf6415818a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3449, y: 593}
+  - name: ground pound with leg movement (1)_Frame_29
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 839
+      width: 532
+      height: 238
+    spriteID: e2696ec8f473ce24b9946aadaf686e30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 839}
+  - name: ground pound with leg movement (1)_Frame_30
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 544
+      y: 839
+      width: 532
+      height: 238
+    spriteID: 95bbb7d8d6b71064cb0c3c8f22bb13b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 544, y: 839}
+  - name: ground pound with leg movement (1)_Frame_31
+    originalName: 
+    pivot: {x: 0.6583851, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2812
+      y: 839
+      width: 483
+      height: 238
+    spriteID: 294f9b7ccb38ec24b8377be00f3bc5ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2812, y: 839}
+  - name: ground pound with leg movement (1)_Frame_32
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2937
+      y: 1085
+      width: 437
+      height: 244
+    spriteID: b206f78689ab1384a92cc6b27c41daca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2937, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_33
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3382
+      y: 1085
+      width: 437
+      height: 244
+    spriteID: 7b0ad5523b1aff141b92157f132afa26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3382, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_34
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1357
+      width: 437
+      height: 244
+    spriteID: 4235507f4a87bd04ba37f346729602f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1357}
+  - name: ground pound with leg movement (1)_Frame_35
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1609
+      width: 411
+      height: 250
+    spriteID: 3469a6406e1ffe348a687a65075d46fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1609}
+  - name: ground pound with leg movement (1)_Frame_36
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1261
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 51464a28331a3ca42ab05eb8b97084e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1261, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_37
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1680
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 8af0b8a1b30fa6245b2fb9c746fa2203
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1680, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_38
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2099
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 90e9b96ac9c059644bd1dd8478d29b4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2099, y: 1085}
+  - name: ground pound with leg movement (1)_Frame_39
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2518
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: d96f178325eb69e4a8994477e6e6a138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2518, y: 1085}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1708255048
+    name: ground pound with leg movement (1)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ground pound with leg movement (1)_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 15e08ff068d74d84d92435eb6f6cc6c8
+    - name: ground pound with leg movement (1)_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: b4c5d9d7c09d9a44bb7756e8f6aee514
+    - name: ground pound with leg movement (1)_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 60507680c60234f4aa204cf6ffe38291
+    - name: ground pound with leg movement (1)_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 244
+      spriteId: d1337f03b83540b42ae5bac9752f9b42
+    - name: ground pound with leg movement (1)_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 35a39f96c5ba873408b3735e052b18da
+    - name: ground pound with leg movement (1)_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 33518be7bdaaa2f4997731ed87a6e5f1
+    - name: ground pound with leg movement (1)_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 304ccb83446548d479c1c3a4c6cef239
+    - name: ground pound with leg movement (1)_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 463
+        height: 328
+      spriteId: 9ac9dc7ff6a855b408acb857fbb2f307
+    - name: ground pound with leg movement (1)_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: 666b29340a2581142933b7905cb7bd4b
+    - name: ground pound with leg movement (1)_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: 8b9e088801a14dc47ad63ec343b44086
+    - name: ground pound with leg movement (1)_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: aaaac5cdce4cd004ca7481ce810ee28a
+    - name: ground pound with leg movement (1)_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 857be5109014d4445a4e47f170387976
+    - name: ground pound with leg movement (1)_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: 2362fd79c3546c244b2495b6e6e5a092
+    - name: ground pound with leg movement (1)_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: 5db7c16ab4c162b4ebe41f5432817e06
+    - name: ground pound with leg movement (1)_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: 8ddb61b39a56ee147b73288b5077ea1c
+    - name: ground pound with leg movement (1)_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 224
+      spriteId: 46bdf2951fab8b643af089e53637268c
+    - name: ground pound with leg movement (1)_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 01a7a4e29882b124b91f5e570a49417e
+    - name: ground pound with leg movement (1)_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: df000e2bf2d66254082416259c0d2aa7
+    - name: ground pound with leg movement (1)_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 0c81ee94c63785846a66b5aa092573f6
+    - name: ground pound with leg movement (1)_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 231
+      spriteId: 6bda5c409802e16468b0adee29fd62c7
+    - name: ground pound with leg movement (1)_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: ef951319bddd8324cbe9330eb1e7cb24
+    - name: ground pound with leg movement (1)_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 7a514239bc218f64d965304be4eaa9fb
+    - name: ground pound with leg movement (1)_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 92b7efa3e3a4572418491ad0a70a4f58
+    - name: ground pound with leg movement (1)_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: c47970d903af5804e89783537df17ea0
+    - name: ground pound with leg movement (1)_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 73d1cb2910b55f4449666ad303c953f0
+    - name: ground pound with leg movement (1)_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: d3a76f655f35d6840ac213b72eea2a62
+    - name: ground pound with leg movement (1)_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: d3c3cc893b65764409737d3649c15f86
+    - name: ground pound with leg movement (1)_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 557
+        height: 238
+      spriteId: 0cc57c63f65ffa34499cabbc47ce5860
+    - name: ground pound with leg movement (1)_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: b2732477a93ff2d4e9e87cbf6415818a
+    - name: ground pound with leg movement (1)_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: e2696ec8f473ce24b9946aadaf686e30
+    - name: ground pound with leg movement (1)_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: 95bbb7d8d6b71064cb0c3c8f22bb13b2
+    - name: ground pound with leg movement (1)_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 483
+        height: 238
+      spriteId: 294f9b7ccb38ec24b8377be00f3bc5ad
+    - name: ground pound with leg movement (1)_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: b206f78689ab1384a92cc6b27c41daca
+    - name: ground pound with leg movement (1)_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: 7b0ad5523b1aff141b92157f132afa26
+    - name: ground pound with leg movement (1)_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: 4235507f4a87bd04ba37f346729602f1
+    - name: ground pound with leg movement (1)_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 250
+      spriteId: 3469a6406e1ffe348a687a65075d46fe
+    - name: ground pound with leg movement (1)_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 51464a28331a3ca42ab05eb8b97084e6
+    - name: ground pound with leg movement (1)_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 8af0b8a1b30fa6245b2fb9c746fa2203
+    - name: ground pound with leg movement (1)_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 90e9b96ac9c059644bd1dd8478d29b4b
+    - name: ground pound with leg movement (1)_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: d96f178325eb69e4a8994477e6e6a138
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 676, y: 448}

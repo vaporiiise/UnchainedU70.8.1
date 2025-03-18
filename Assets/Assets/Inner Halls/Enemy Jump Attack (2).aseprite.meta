@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 782f4b68ec0fd4f4ab93080417d3187e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Enemy Jump Attack (2)_Frame_0
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19926198}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1802
+      width: 409
+      height: 271
+    spriteID: 811324e7449d6864786a56bc8988d15b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1802}
+  - name: Enemy Jump Attack (2)_Frame_1
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 4
+      width: 409
+      height: 270
+    spriteID: 2c93d211106e94d449504165d57bcad6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 4}
+  - name: Enemy Jump Attack (2)_Frame_2
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 282
+      width: 409
+      height: 270
+    spriteID: 67acea235651daa46a43da6002ef7e95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 282}
+  - name: Enemy Jump Attack (2)_Frame_3
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19494584}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1170
+      width: 409
+      height: 277
+    spriteID: 051fca3a442c9e547993681b87b098a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1170}
+  - name: Enemy Jump Attack (2)_Frame_4
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.18947369}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 409
+      height: 285
+    spriteID: cb952b335afb6fb48bdb35c53fba9306
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Enemy Jump Attack (2)_Frame_5
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.18947369}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 297
+      width: 409
+      height: 285
+    spriteID: f590ebde656c1b345953b134ef787e3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 297}
+  - name: Enemy Jump Attack (2)_Frame_6
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.18947369}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 590
+      width: 409
+      height: 285
+    spriteID: 2a600d2ad81b0c144b93fdcd82bf1f63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 590}
+  - name: Enemy Jump Attack (2)_Frame_7
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.27979273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3877
+      width: 409
+      height: 193
+    spriteID: ee9905f384893b04481985d2344a9927
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3877}
+  - name: Enemy Jump Attack (2)_Frame_8
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 560
+      width: 409
+      height: 190
+    spriteID: 6011593538aa58340808bf3bb1987aaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 560}
+  - name: Enemy Jump Attack (2)_Frame_9
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 758
+      width: 409
+      height: 190
+    spriteID: 793bd471e63f3414bb15e1bd27be56ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 758}
+  - name: Enemy Jump Attack (2)_Frame_10
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 956
+      width: 409
+      height: 190
+    spriteID: b5560edda8c3f7249bc2c5a011a322f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 956}
+  - name: Enemy Jump Attack (2)_Frame_11
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 1154
+      width: 409
+      height: 190
+    spriteID: ef22ecfb29facee40a9bd5f849b98818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 1154}
+  - name: Enemy Jump Attack (2)_Frame_12
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 1352
+      width: 409
+      height: 190
+    spriteID: d720e7d422bdc7345817d085fb6731ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 1352}
+  - name: Enemy Jump Attack (2)_Frame_13
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 1550
+      width: 409
+      height: 190
+    spriteID: b0c6c46c47909d149a689cf0bd9f1d65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 1550}
+  - name: Enemy Jump Attack (2)_Frame_14
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 1748
+      width: 409
+      height: 190
+    spriteID: 1f6e3537357707e4ab073740f05bba8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 1748}
+  - name: Enemy Jump Attack (2)_Frame_15
+    originalName: 
+    pivot: {x: 0.4954955, y: -0.6489675}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1455
+      width: 333
+      height: 339
+    spriteID: d5cf824beac08bd42953914641454d27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1455}
+  - name: Enemy Jump Attack (2)_Frame_32
+    originalName: 
+    pivot: {x: 0.4954955, y: -0.68373495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3197
+      width: 333
+      height: 332
+    spriteID: 8f8873039a8786a409ad9980bcba9603
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3197}
+  - name: Enemy Jump Attack (2)_Frame_33
+    originalName: 
+    pivot: {x: 0.4954955, y: -0.68373495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3537
+      width: 333
+      height: 332
+    spriteID: 432a44d547ce8204aa7c0cbd592171b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3537}
+  - name: Enemy Jump Attack (2)_Frame_34
+    originalName: 
+    pivot: {x: 0.4954955, y: -0.68373495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 421
+      y: 4
+      width: 333
+      height: 332
+    spriteID: 181cab32073aad346928bbb30c77721c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 421, y: 4}
+  - name: Enemy Jump Attack (2)_Frame_35
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 1946
+      width: 409
+      height: 190
+    spriteID: 5d1dafab2d636034092b80465287ff57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 1946}
+  - name: Enemy Jump Attack (2)_Frame_36
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2144
+      width: 409
+      height: 190
+    spriteID: ab3a90e2e9ff5e64c9e6b73239203a95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2144}
+  - name: Enemy Jump Attack (2)_Frame_37
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2342
+      width: 409
+      height: 190
+    spriteID: 076bceecaabe1b34eb24ceff33fabe33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2342}
+  - name: Enemy Jump Attack (2)_Frame_38
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2540
+      width: 409
+      height: 190
+    spriteID: 5ec22e774b02e1549a2425d4d0acf8ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2540}
+  - name: Enemy Jump Attack (2)_Frame_39
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2738
+      width: 409
+      height: 190
+    spriteID: a8505702de5bf7945bef561f7b1c8944
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2738}
+  - name: Enemy Jump Attack (2)_Frame_40
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2936
+      width: 409
+      height: 190
+    spriteID: f9a09ae1f4735714db0e10aa06f9b08b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2936}
+  - name: Enemy Jump Attack (2)_Frame_41
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3134
+      width: 409
+      height: 190
+    spriteID: da0bd6a6d14bf3d4e99626274c936a29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3134}
+  - name: Enemy Jump Attack (2)_Frame_42
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3332
+      width: 409
+      height: 190
+    spriteID: e07925f51d22617438abac9eba29affe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3332}
+  - name: Enemy Jump Attack (2)_Frame_43
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3530
+      width: 409
+      height: 190
+    spriteID: 015c4b9921d0574429ac739da7fcd66d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3530}
+  - name: Enemy Jump Attack (2)_Frame_44
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3728
+      width: 409
+      height: 190
+    spriteID: a1f6a238398d623468a6d2df9287826c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3728}
+  - name: Enemy Jump Attack (2)_Frame_45
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1179
+      y: 4
+      width: 409
+      height: 190
+    spriteID: 61cc52999c65e53488609c9564d223d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1179, y: 4}
+  - name: Enemy Jump Attack (2)_Frame_46
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.28421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1179
+      y: 202
+      width: 409
+      height: 190
+    spriteID: c69cf974df56822428a67511a0ed7c89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1179, y: 202}
+  - name: Enemy Jump Attack (2)_Frame_47
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19354837}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 883
+      width: 409
+      height: 279
+    spriteID: 4870766c4bfee7641887825690357bbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 883}
+  - name: Enemy Jump Attack (2)_Frame_48
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19926198}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2081
+      width: 409
+      height: 271
+    spriteID: ef39a78ddcda1f748941adeb94b546e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2081}
+  - name: Enemy Jump Attack (2)_Frame_49
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19926198}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2360
+      width: 409
+      height: 271
+    spriteID: cb6d9cbd18eaf4940809366d45c9cdca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2360}
+  - name: Enemy Jump Attack (2)_Frame_50
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19926198}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2639
+      width: 409
+      height: 271
+    spriteID: 71c5a40a3b9fcb94486c5f76422db8bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2639}
+  - name: Enemy Jump Attack (2)_Frame_51
+    originalName: 
+    pivot: {x: 0.5256724, y: -0.19926198}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2918
+      width: 409
+      height: 271
+    spriteID: a20a078da78744d4980028d3a1bf7c62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2918}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 563945659
+    name: Enemy Jump Attack (2)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Enemy Jump Attack (2)_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 271
+      spriteId: 811324e7449d6864786a56bc8988d15b
+    - name: Enemy Jump Attack (2)_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 270
+      spriteId: 2c93d211106e94d449504165d57bcad6
+    - name: Enemy Jump Attack (2)_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 270
+      spriteId: 67acea235651daa46a43da6002ef7e95
+    - name: Enemy Jump Attack (2)_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 277
+      spriteId: 051fca3a442c9e547993681b87b098a1
+    - name: Enemy Jump Attack (2)_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 285
+      spriteId: cb952b335afb6fb48bdb35c53fba9306
+    - name: Enemy Jump Attack (2)_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 285
+      spriteId: f590ebde656c1b345953b134ef787e3c
+    - name: Enemy Jump Attack (2)_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 285
+      spriteId: 2a600d2ad81b0c144b93fdcd82bf1f63
+    - name: Enemy Jump Attack (2)_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 193
+      spriteId: ee9905f384893b04481985d2344a9927
+    - name: Enemy Jump Attack (2)_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 6011593538aa58340808bf3bb1987aaa
+    - name: Enemy Jump Attack (2)_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 793bd471e63f3414bb15e1bd27be56ac
+    - name: Enemy Jump Attack (2)_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: b5560edda8c3f7249bc2c5a011a322f6
+    - name: Enemy Jump Attack (2)_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: ef22ecfb29facee40a9bd5f849b98818
+    - name: Enemy Jump Attack (2)_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: d720e7d422bdc7345817d085fb6731ed
+    - name: Enemy Jump Attack (2)_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: b0c6c46c47909d149a689cf0bd9f1d65
+    - name: Enemy Jump Attack (2)_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 1f6e3537357707e4ab073740f05bba8b
+    - name: Enemy Jump Attack (2)_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 119
+        y: 220
+        width: 333
+        height: 339
+      spriteId: d5cf824beac08bd42953914641454d27
+    - name: Enemy Jump Attack (2)_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 119
+        y: 227
+        width: 333
+        height: 332
+      spriteId: 8f8873039a8786a409ad9980bcba9603
+    - name: Enemy Jump Attack (2)_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 119
+        y: 227
+        width: 333
+        height: 332
+      spriteId: 432a44d547ce8204aa7c0cbd592171b3
+    - name: Enemy Jump Attack (2)_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 119
+        y: 227
+        width: 333
+        height: 332
+      spriteId: 181cab32073aad346928bbb30c77721c
+    - name: Enemy Jump Attack (2)_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 5d1dafab2d636034092b80465287ff57
+    - name: Enemy Jump Attack (2)_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: ab3a90e2e9ff5e64c9e6b73239203a95
+    - name: Enemy Jump Attack (2)_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 076bceecaabe1b34eb24ceff33fabe33
+    - name: Enemy Jump Attack (2)_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 5ec22e774b02e1549a2425d4d0acf8ab
+    - name: Enemy Jump Attack (2)_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: a8505702de5bf7945bef561f7b1c8944
+    - name: Enemy Jump Attack (2)_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: f9a09ae1f4735714db0e10aa06f9b08b
+    - name: Enemy Jump Attack (2)_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: da0bd6a6d14bf3d4e99626274c936a29
+    - name: Enemy Jump Attack (2)_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: e07925f51d22617438abac9eba29affe
+    - name: Enemy Jump Attack (2)_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 015c4b9921d0574429ac739da7fcd66d
+    - name: Enemy Jump Attack (2)_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: a1f6a238398d623468a6d2df9287826c
+    - name: Enemy Jump Attack (2)_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: 61cc52999c65e53488609c9564d223d4
+    - name: Enemy Jump Attack (2)_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 190
+      spriteId: c69cf974df56822428a67511a0ed7c89
+    - name: Enemy Jump Attack (2)_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 279
+      spriteId: 4870766c4bfee7641887825690357bbc
+    - name: Enemy Jump Attack (2)_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 271
+      spriteId: ef39a78ddcda1f748941adeb94b546e0
+    - name: Enemy Jump Attack (2)_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 271
+      spriteId: cb6d9cbd18eaf4940809366d45c9cdca
+    - name: Enemy Jump Attack (2)_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 271
+      spriteId: 71c5a40a3b9fcb94486c5f76422db8bf
+    - name: Enemy Jump Attack (2)_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 54
+        width: 409
+        height: 271
+      spriteId: a20a078da78744d4980028d3a1bf7c62
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 568, y: 608}

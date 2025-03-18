@@ -1,0 +1,1299 @@
+fileFormatVersion: 2
+guid: 0ef50af53af8c6747ae608250f907b01
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Enemy Attack (2)_Frame_0
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 327545051a15c9845b073680d97200c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1085}
+  - name: Enemy Attack (2)_Frame_1
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 423
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 0e46035266f9cf94c9411f2f34c2b0bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 423, y: 1085}
+  - name: Enemy Attack (2)_Frame_2
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 842
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: f341a87ed0d6257439fe689877a6d7d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 842, y: 1085}
+  - name: Enemy Attack (2)_Frame_3
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 1357
+      width: 411
+      height: 244
+    spriteID: 569c4664aeb9a6a4cbdbc9e41d05a933
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 1357}
+  - name: Enemy Attack (2)_Frame_4
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1864
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 94663033e73f79846a566ba6f77ddbe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1864, y: 4}
+  - name: Enemy Attack (2)_Frame_5
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2344
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 945bab3c90a220c42a03289704854e50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2344, y: 4}
+  - name: Enemy Attack (2)_Frame_6
+    originalName: 
+    pivot: {x: 0.6737288, y: -0.034591194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2824
+      y: 4
+      width: 472
+      height: 318
+    spriteID: 1f7cbfbbcdcce844eb5c8d758e4917e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2824, y: 4}
+  - name: Enemy Attack (2)_Frame_7
+    originalName: 
+    pivot: {x: 0.68682504, y: -0.033536583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1393
+      y: 4
+      width: 463
+      height: 328
+    spriteID: 9b6b86885570a78499f72eb4a5037b30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1393, y: 4}
+  - name: Enemy Attack (2)_Frame_8
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 455
+      height: 335
+    spriteID: 390739db07fadca4f8b7a9fee32fa016
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Enemy Attack (2)_Frame_9
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 467
+      y: 4
+      width: 455
+      height: 335
+    spriteID: 3044c91dee8b6aa42949fff14918d0ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 467, y: 4}
+  - name: Enemy Attack (2)_Frame_10
+    originalName: 
+    pivot: {x: 0.6989011, y: -0.03283582}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 4
+      width: 455
+      height: 335
+    spriteID: 4a3611c38f6133746893e5c1f675ded2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 4}
+  - name: Enemy Attack (2)_Frame_11
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3304
+      y: 4
+      width: 568
+      height: 238
+    spriteID: 1daa140727ff65b48b928ae339a878e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3304, y: 4}
+  - name: Enemy Attack (2)_Frame_12
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 839
+      width: 568
+      height: 218
+    spriteID: a77f6ad34d07dfa488172e486a7d3656
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 839}
+  - name: Enemy Attack (2)_Frame_13
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1660
+      y: 839
+      width: 568
+      height: 218
+    spriteID: ac1c1bf746edce84780e209f7a8079e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1660, y: 839}
+  - name: Enemy Attack (2)_Frame_14
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.050458714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2236
+      y: 839
+      width: 568
+      height: 218
+    spriteID: edc402f0b9a56af4dbfee7e5a0232153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2236, y: 839}
+  - name: Enemy Attack (2)_Frame_15
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04910714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2873
+      y: 593
+      width: 568
+      height: 224
+    spriteID: 1cc05ca4236f2f6488fa77362cf416df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2873, y: 593}
+  - name: Enemy Attack (2)_Frame_16
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 347
+      width: 568
+      height: 238
+    spriteID: e7638628413b5d8409d4aa20062473a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 347}
+  - name: Enemy Attack (2)_Frame_17
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 347
+      width: 568
+      height: 238
+    spriteID: a364977c4f88c3e41a204301e5e67eb5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 347}
+  - name: Enemy Attack (2)_Frame_18
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1156
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 60294a106c21a4e499faea3bb871fcef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1156, y: 347}
+  - name: Enemy Attack (2)_Frame_19
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04761905}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2297
+      y: 593
+      width: 568
+      height: 231
+    spriteID: 0d904a7c1ce188344965383d2f2d86d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2297, y: 593}
+  - name: Enemy Attack (2)_Frame_20
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 347
+      width: 568
+      height: 238
+    spriteID: c3fdf99b99997cf4fae166026a7aa02a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 347}
+  - name: Enemy Attack (2)_Frame_21
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2308
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 4bba8449371b2764b8b23c3fbdbd9c59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2308, y: 347}
+  - name: Enemy Attack (2)_Frame_22
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2884
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 8006c683c1b36a448beffeb83befa390
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2884, y: 347}
+  - name: Enemy Attack (2)_Frame_23
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3460
+      y: 347
+      width: 568
+      height: 238
+    spriteID: 0e6ef192a9a72d742b143eece0e0424f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3460, y: 347}
+  - name: Enemy Attack (2)_Frame_24
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 593
+      width: 568
+      height: 238
+    spriteID: fa464e043484f664ea041b2f83af57c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 593}
+  - name: Enemy Attack (2)_Frame_25
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 593
+      width: 568
+      height: 238
+    spriteID: 23164adfdcb59bd44a56dec87ac56ec5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 593}
+  - name: Enemy Attack (2)_Frame_26
+    originalName: 
+    pivot: {x: 0.55985916, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1156
+      y: 593
+      width: 568
+      height: 238
+    spriteID: a69531869bc04d24e8b37219e4c120ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1156, y: 593}
+  - name: Enemy Attack (2)_Frame_27
+    originalName: 
+    pivot: {x: 0.5709156, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 593
+      width: 557
+      height: 238
+    spriteID: bbc72e16800312343b8dbfc7460b7130
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 593}
+  - name: Enemy Attack (2)_Frame_28
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3449
+      y: 593
+      width: 532
+      height: 238
+    spriteID: 30ec7fcd9578ba443b676d9045b49010
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3449, y: 593}
+  - name: Enemy Attack (2)_Frame_29
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 839
+      width: 532
+      height: 238
+    spriteID: 9a64b7927541ef24fba0bccd7292efaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 839}
+  - name: Enemy Attack (2)_Frame_30
+    originalName: 
+    pivot: {x: 0.59774435, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 544
+      y: 839
+      width: 532
+      height: 238
+    spriteID: 31522cce0c8913b4baa41f36adc2a491
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 544, y: 839}
+  - name: Enemy Attack (2)_Frame_31
+    originalName: 
+    pivot: {x: 0.6583851, y: -0.04621849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2812
+      y: 839
+      width: 483
+      height: 238
+    spriteID: 6b6c139946565b34f88edf4989160656
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2812, y: 839}
+  - name: Enemy Attack (2)_Frame_32
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2937
+      y: 1085
+      width: 437
+      height: 244
+    spriteID: 83d4a7bd2b2c1e747801f23327e9fb64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2937, y: 1085}
+  - name: Enemy Attack (2)_Frame_33
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3382
+      y: 1085
+      width: 437
+      height: 244
+    spriteID: 82b9dfe79b6de274dbe7b754f60ef188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3382, y: 1085}
+  - name: Enemy Attack (2)_Frame_34
+    originalName: 
+    pivot: {x: 0.7276888, y: -0.045081966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1357
+      width: 437
+      height: 244
+    spriteID: ec339f3148c00da40a04a3c621b66f66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1357}
+  - name: Enemy Attack (2)_Frame_35
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1609
+      width: 411
+      height: 250
+    spriteID: ae6d6d85162ef2f46981adb3ef8f409b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1609}
+  - name: Enemy Attack (2)_Frame_36
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1261
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 25acdd0b67280f440aae29d93739a3a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1261, y: 1085}
+  - name: Enemy Attack (2)_Frame_37
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1680
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: ed7e216b35281074e88f148ee688c292
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1680, y: 1085}
+  - name: Enemy Attack (2)_Frame_38
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2099
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: a5bfb680eed0461429d6a71adcb4ce41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2099, y: 1085}
+  - name: Enemy Attack (2)_Frame_39
+    originalName: 
+    pivot: {x: 0.7737226, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2518
+      y: 1085
+      width: 411
+      height: 264
+    spriteID: 2be48b2d2cc295b41ba077a4a774d384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2518, y: 1085}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -623681327
+    name: Enemy Attack (2)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Enemy Attack (2)_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 327545051a15c9845b073680d97200c7
+    - name: Enemy Attack (2)_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 0e46035266f9cf94c9411f2f34c2b0bb
+    - name: Enemy Attack (2)_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: f341a87ed0d6257439fe689877a6d7d9
+    - name: Enemy Attack (2)_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 244
+      spriteId: 569c4664aeb9a6a4cbdbc9e41d05a933
+    - name: Enemy Attack (2)_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 94663033e73f79846a566ba6f77ddbe2
+    - name: Enemy Attack (2)_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 945bab3c90a220c42a03289704854e50
+    - name: Enemy Attack (2)_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 472
+        height: 318
+      spriteId: 1f7cbfbbcdcce844eb5c8d758e4917e7
+    - name: Enemy Attack (2)_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 463
+        height: 328
+      spriteId: 9b6b86885570a78499f72eb4a5037b30
+    - name: Enemy Attack (2)_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: 390739db07fadca4f8b7a9fee32fa016
+    - name: Enemy Attack (2)_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: 3044c91dee8b6aa42949fff14918d0ac
+    - name: Enemy Attack (2)_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 455
+        height: 335
+      spriteId: 4a3611c38f6133746893e5c1f675ded2
+    - name: Enemy Attack (2)_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 1daa140727ff65b48b928ae339a878e9
+    - name: Enemy Attack (2)_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: a77f6ad34d07dfa488172e486a7d3656
+    - name: Enemy Attack (2)_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: ac1c1bf746edce84780e209f7a8079e7
+    - name: Enemy Attack (2)_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 218
+      spriteId: edc402f0b9a56af4dbfee7e5a0232153
+    - name: Enemy Attack (2)_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 224
+      spriteId: 1cc05ca4236f2f6488fa77362cf416df
+    - name: Enemy Attack (2)_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: e7638628413b5d8409d4aa20062473a0
+    - name: Enemy Attack (2)_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: a364977c4f88c3e41a204301e5e67eb5
+    - name: Enemy Attack (2)_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 60294a106c21a4e499faea3bb871fcef
+    - name: Enemy Attack (2)_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 231
+      spriteId: 0d904a7c1ce188344965383d2f2d86d7
+    - name: Enemy Attack (2)_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: c3fdf99b99997cf4fae166026a7aa02a
+    - name: Enemy Attack (2)_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 4bba8449371b2764b8b23c3fbdbd9c59
+    - name: Enemy Attack (2)_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 8006c683c1b36a448beffeb83befa390
+    - name: Enemy Attack (2)_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 0e6ef192a9a72d742b143eece0e0424f
+    - name: Enemy Attack (2)_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: fa464e043484f664ea041b2f83af57c3
+    - name: Enemy Attack (2)_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: 23164adfdcb59bd44a56dec87ac56ec5
+    - name: Enemy Attack (2)_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 568
+        height: 238
+      spriteId: a69531869bc04d24e8b37219e4c120ae
+    - name: Enemy Attack (2)_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 557
+        height: 238
+      spriteId: bbc72e16800312343b8dbfc7460b7130
+    - name: Enemy Attack (2)_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: 30ec7fcd9578ba443b676d9045b49010
+    - name: Enemy Attack (2)_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: 9a64b7927541ef24fba0bccd7292efaa
+    - name: Enemy Attack (2)_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 532
+        height: 238
+      spriteId: 31522cce0c8913b4baa41f36adc2a491
+    - name: Enemy Attack (2)_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 483
+        height: 238
+      spriteId: 6b6c139946565b34f88edf4989160656
+    - name: Enemy Attack (2)_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: 83d4a7bd2b2c1e747801f23327e9fb64
+    - name: Enemy Attack (2)_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: 82b9dfe79b6de274dbe7b754f60ef188
+    - name: Enemy Attack (2)_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 437
+        height: 244
+      spriteId: ec339f3148c00da40a04a3c621b66f66
+    - name: Enemy Attack (2)_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 250
+      spriteId: ae6d6d85162ef2f46981adb3ef8f409b
+    - name: Enemy Attack (2)_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 25acdd0b67280f440aae29d93739a3a4
+    - name: Enemy Attack (2)_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: ed7e216b35281074e88f148ee688c292
+    - name: Enemy Attack (2)_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: a5bfb680eed0461429d6a71adcb4ce41
+    - name: Enemy Attack (2)_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 11
+        width: 411
+        height: 264
+      spriteId: 2be48b2d2cc295b41ba077a4a774d384
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 676, y: 448}
