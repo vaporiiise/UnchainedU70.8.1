@@ -14,15 +14,23 @@ public class BossMusicManager : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float fadeDuration = 1.5f;
 
+    private float bgmVolume = 1f; // Default volume
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            SceneManager.activeSceneChanged += OnSceneChanging; 
+            SceneManager.activeSceneChanged += OnSceneChanging;
 
-            PlayBackgroundMusic(); 
+            // Load saved BGM volume
+            bgmVolume = PlayerPrefs.GetFloat("BGM_Volume", 1f);
+
+            // Ensure BGM loops
+            backgroundMusicSource.loop = true; 
+
+            PlayBackgroundMusic();
         }
         else
         {
@@ -37,28 +45,53 @@ public class BossMusicManager : MonoBehaviour
 
     private void OnSceneChanging(Scene current, Scene next)
     {
-        StopAllMusic();
+        StopAllCoroutines();
+        StartCoroutine(RestartBackgroundMusic());
+    }
+
+    private IEnumerator RestartBackgroundMusic()
+    {
+        yield return new WaitForSeconds(0.5f); // Small delay to allow the scene to load
+        PlayBackgroundMusic();
     }
 
     private void PlayBackgroundMusic()
     {
         if (!backgroundMusicSource.isPlaying)
         {
-            backgroundMusicSource.volume = 1f;
+            backgroundMusicSource.volume = bgmVolume;
             backgroundMusicSource.Play();
+        }
+        else
+        {
+            backgroundMusicSource.volume = bgmVolume; // Ensure volume is updated
         }
     }
 
-    public void PlayDialogueMusic()
+    public void OnDialogueStart()
     {
+        StopAllCoroutines();
         StartCoroutine(FadeOutMusic(backgroundMusicSource));
         StartCoroutine(FadeInMusic(dialogueMusicSource));
     }
 
-    public void StopDialogueMusic()
+    public void OnDialogueEnd()
     {
+        StopAllCoroutines();
         StartCoroutine(FadeOutMusic(dialogueMusicSource));
         StartCoroutine(FadeInMusic(backgroundMusicSource));
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        bgmVolume = Mathf.Clamp01(volume);
+        PlayerPrefs.SetFloat("BGM_Volume", bgmVolume);
+        PlayerPrefs.Save();
+
+        if (backgroundMusicSource.isPlaying)
+        {
+            backgroundMusicSource.volume = bgmVolume;
+        }
     }
 
     private IEnumerator FadeOutMusic(AudioSource source)
@@ -84,25 +117,9 @@ public class BossMusicManager : MonoBehaviour
             source.Play();
             for (float t = 0; t < fadeDuration; t += Time.deltaTime)
             {
-                source.volume = Mathf.Lerp(0f, 1f, t / fadeDuration);
+                source.volume = Mathf.Lerp(0f, bgmVolume, t / fadeDuration);
                 yield return null;
             }
         }
-    }
-
-    private void StopAllMusic()
-    {
-        backgroundMusicSource.Stop();
-        dialogueMusicSource.Stop();
-    }
-
-    public void OnDialogueStart()
-    {
-        PlayDialogueMusic();
-    }
-
-    public void OnDialogueEnd()
-    {
-        StopDialogueMusic();
     }
 }

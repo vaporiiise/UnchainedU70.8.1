@@ -26,6 +26,8 @@ TagManager:
   - ObjToBlock
   - Dialogue1
   - Dialogue2
+  - SFX
+  - BGM
   layers:
   - Default
   - TransparentFX
