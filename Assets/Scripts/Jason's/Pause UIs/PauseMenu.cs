@@ -1,161 +1,91 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused { get; private set; }
 
-    public GameObject pauseMenuUI; // Ref to the pause menu UI
-    public GameObject settingsPanel; // Ref to the settings panel
-
-    public GameObject player; // Ref to the player GameObject
+    public GameObject pauseMenuUI;  // Assign Pause Panel
+    public GameObject settingsPanel; // Assign Settings Panel
+    public GameObject exitPanel; // Assign Exit Panel
 
     [SerializeField]
-    private KeyCode pauseKey = KeyCode.Escape; // Configurable key for pausing the game
-
-    private MonoBehaviour[] playerScripts; // Store the player scripts for enabling/disabling
+    private KeyCode pauseKey = KeyCode.Escape;
 
     void Start()
     {
-        // Ensure the settings panel is hidden at the start, if assigned
-        if (settingsPanel != null)
-        {
-            settingsPanel.SetActive(false);
-        }
-
-        // Ensure the pause menu is hidden at the start, if assigned
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(false);
-        }
-
-        // Get all the MonoBehaviour scripts attached to the player, if assigned
-        if (player != null)
-        {
-            playerScripts = player.GetComponents<MonoBehaviour>();
-        }
+        // Ensure all panels are disabled at the start
+        if (pauseMenuUI) pauseMenuUI.SetActive(false);
+        if (settingsPanel) settingsPanel.SetActive(false);
+        if (exitPanel) exitPanel.SetActive(false);
     }
 
     void Update()
     {
-        // Check if the pause key is pressed, and the pauseMenuUI exists
-        if (pauseMenuUI != null && Input.GetKeyDown(pauseKey))
+        if (Input.GetKeyDown(pauseKey))
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            TogglePause();
         }
     }
-
 
     public static void TogglePause()
     {
-        GameIsPaused = !GameIsPaused;
-
-        // Optionally manage the game time scale
-        Time.timeScale = GameIsPaused ? 0f : 1f;
-    }
-
-    void Resume()
-    {
-        // Only resume if the pause menu UI exists
-        if (pauseMenuUI != null)
+        PauseMenu instance = FindObjectOfType<PauseMenu>();
+        if (instance != null)
         {
-            pauseMenuUI.SetActive(false); // Hide the pause menu UI
+            if (GameIsPaused)
+                instance.Resume();
+            else
+                instance.Pause();
         }
-
-        // Always hide the settings panel, if exists
-        if (settingsPanel != null)
+        else
         {
-            settingsPanel.SetActive(false); // Ensure settings panel is hidden
+            Debug.LogError("PauseMenu instance not found in scene!");
         }
-
-        Time.timeScale = 1f; // Resume the game time
-        GameIsPaused = false; // Update the game state
-
-        // Re-enable player scripts if player exists
-        EnablePlayerScripts();
     }
 
     void Pause()
     {
-        // Only pause if the pause menu UI exists
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(true); // Show the pause menu UI
-        }
+        if (pauseMenuUI) pauseMenuUI.SetActive(true);
+        if (settingsPanel) settingsPanel.SetActive(false);
+        if (exitPanel) exitPanel.SetActive(false);
 
-        Time.timeScale = 0f; // Pause the game time
-        GameIsPaused = true; // Update the game state
-
-        // Disable player scripts if player exists
-        DisablePlayerScripts();
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 
-    // Method to open the settings panel
+    void Resume()
+    {
+        if (pauseMenuUI) pauseMenuUI.SetActive(false);
+        if (settingsPanel) settingsPanel.SetActive(false);
+        if (exitPanel) exitPanel.SetActive(false);
+
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
     public void OpenSettingsPanel()
     {
-        // Hide the pause menu UI, if exists
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(false);
-        }
-
-        // Show the settings panel if it exists
-        if (settingsPanel != null)
-        {
-            settingsPanel.SetActive(true);
-        }
+        if (settingsPanel) settingsPanel.SetActive(true);
+        if (pauseMenuUI) pauseMenuUI.SetActive(false);
+        if (exitPanel) exitPanel.SetActive(false);
     }
 
-    // Method to close the settings panel and return to the pause menu (if it exists)
     public void CloseSettingsPanel()
     {
-        // Hide the settings panel if it exists
-        if (settingsPanel != null)
-        {
-            settingsPanel.SetActive(false);
-        }
-
-        // Show the pause menu UI again if it exists
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(true);
-        }
+        if (settingsPanel) settingsPanel.SetActive(false);
+        if (pauseMenuUI) pauseMenuUI.SetActive(true);
     }
 
-    // Method to disable all player scripts
-    void DisablePlayerScripts()
+    public void OpenExitPanel()
     {
-        if (playerScripts != null)
-        {
-            foreach (MonoBehaviour script in playerScripts)
-            {
-                if (script != this) // Ensure we don't disable the PauseMenu itself
-                {
-                    script.enabled = false;
-                }
-            }
-        }
+        if (exitPanel) exitPanel.SetActive(true);
+        if (pauseMenuUI) pauseMenuUI.SetActive(false);
     }
 
-    // Method to enable all player scripts
-    void EnablePlayerScripts()
+    public void CloseExitPanel()
     {
-        if (playerScripts != null)
-        {
-            foreach (MonoBehaviour script in playerScripts)
-            {
-                script.enabled = true;
-            }
-        }
+        if (exitPanel) exitPanel.SetActive(false);
+        if (pauseMenuUI) pauseMenuUI.SetActive(true);
     }
 }

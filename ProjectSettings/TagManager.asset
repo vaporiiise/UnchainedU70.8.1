@@ -28,6 +28,7 @@ TagManager:
   - Dialogue2
   - SFX
   - BGM
+  - Master
   layers:
   - Default
   - TransparentFX
