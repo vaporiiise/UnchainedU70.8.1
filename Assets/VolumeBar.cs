@@ -1,11 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class VolumeBar : MonoBehaviour
 {
-    public string audioTag = "BGM"; // "Master" or "BGM" or "SFX"
+    public string audioTag = "BGM"; // "Master", "BGM", or "SFX"
     public Image[] volumeBars;
     public Button increaseButton, decreaseButton;
 
@@ -48,36 +48,39 @@ public class VolumeBar : MonoBehaviour
             volumeBars[i].enabled = (i < volumeLevel);
         }
 
-        // Convert bar count to 0-1 range
         float newVolume = volumeLevel / (float)volumeBars.Length;
+        PlayerPrefs.SetInt(VolumeKey + audioTag, volumeLevel);
+        PlayerPrefs.Save();
+
+        Debug.Log($"[DEBUG] {audioTag} Volume Updated: {newVolume}");
 
         if (audioTag == "Master")
         {
-            AudioManager.instance.SetVolumeByTag("BGM", newVolume);
-            AudioManager.instance.SetVolumeByTag("SFX", newVolume);
+            int bgmStored = PlayerPrefs.GetInt(VolumeKey + "BGM", volumeBars.Length);
+            int sfxStored = PlayerPrefs.GetInt(VolumeKey + "SFX", volumeBars.Length);
 
-            int bgmLevel = PlayerPrefs.GetInt(VolumeKey + "BGM", volumeBars.Length);
-            int sfxLevel = PlayerPrefs.GetInt(VolumeKey + "SFX", volumeBars.Length);
+            float bgmVolume = bgmStored / (float)volumeBars.Length;
+            float sfxVolume = sfxStored / (float)volumeBars.Length;
 
-            bgmLevel = Mathf.Min(bgmLevel, volumeLevel);
-            sfxLevel = Mathf.Min(sfxLevel, volumeLevel);
+            float finalBGM = (bgmStored == 0) ? 0f : bgmVolume * newVolume;
+            float finalSFX = (sfxStored == 0) ? 0f : sfxVolume * newVolume;
 
-            PlayerPrefs.SetInt(VolumeKey + "BGM", bgmLevel);
-            PlayerPrefs.SetInt(VolumeKey + "SFX", sfxLevel);
+            Debug.Log($"[DEBUG] Applying Master Volume Scaling: Master({newVolume}) → BGM({finalBGM}) SFX({finalSFX})");
+
+            SFXManager.instance.SetVolumeByTag("BGM", finalBGM);
+            SFXManager.instance.SetVolumeByTag("SFX", finalSFX);
+            SFXManager.instance.SetVolumeByTag("Master", newVolume); // Ensure Master is also updated
         }
         else
         {
-            // If changing BGM or SFX, ensure it does not exceed Master volume
-            int masterLevel = PlayerPrefs.GetInt(VolumeKey + "Master", volumeBars.Length);
-            volumeLevel = Mathf.Min(volumeLevel, masterLevel);
+            float masterVolume = PlayerPrefs.GetInt(VolumeKey + "Master", volumeBars.Length) / (float)volumeBars.Length;
+            newVolume = Mathf.Min(newVolume, masterVolume);
 
-            AudioManager.instance.SetVolumeByTag(audioTag, newVolume);
+            Debug.Log($"[DEBUG] Applying {audioTag} Volume: {newVolume}");
+            SFXManager.instance.SetVolumeByTag(audioTag, newVolume);
         }
-
-        // Save volume setting
-        PlayerPrefs.SetInt(VolumeKey + audioTag, volumeLevel);
-        PlayerPrefs.Save();
     }
+
 
     //public string audioTag = "BGM"; // "Master" or "BGM" or "SFX"
     //public Image[] volumeBars;

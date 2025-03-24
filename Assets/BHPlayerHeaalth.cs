@@ -5,22 +5,26 @@ using UnityEngine.UI;
 
 public class BHPlayerHeaalth : MonoBehaviour
 {
+    [Header("Health Settings")]
     public int maxHealth = 30;
     private int currentHealth;
-    public AudioClip takeDamageSound;
-    private AudioSource audioSource;
-    public AudioClip healSound;
 
+    [Header("Audio Settings")]
+    public AudioClip takeDamageSound;
+    public AudioClip healSound;
+    public AudioSource audioSource;  // Now you can assign an AudioSource from the Inspector
+
+    [Header("UI Elements")]
     public List<Image> healthImages;
     public GameObject damageIndicator;
     public float damageDisplayDuration = 0.5f;
 
+    [Header("Death Screen")]
     public GameObject deathCanvas;
     public List<GameObject> otherCanvases;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         UpdateHealthUI();
 
@@ -33,16 +37,19 @@ public class BHPlayerHeaalth : MonoBehaviour
         {
             deathCanvas.SetActive(false);
         }
-
     }
 
     public void TakeDamage(int damage)
     {
-        UpdateHealthUI();
-
         currentHealth -= damage;
+        UpdateHealthUI();
         Debug.Log("Player Health: " + currentHealth);
-        audioSource.PlayOneShot(takeDamageSound);
+
+        if (audioSource != null && takeDamageSound != null)
+        {
+            audioSource.PlayOneShot(takeDamageSound);
+        }
+
         if (damageIndicator != null)
         {
             StartCoroutine(ShowDamageIndicator());
@@ -63,9 +70,8 @@ public class BHPlayerHeaalth : MonoBehaviour
 
     void UpdateHealthUI()
     {
-        int healthPerImage = maxHealth / healthImages.Count; // Health each image represents
-        int remainingSprites = currentHealth / healthPerImage; // How many images should be active?
-
+        int healthPerImage = maxHealth / healthImages.Count;
+        int remainingSprites = currentHealth / healthPerImage;
         remainingSprites = Mathf.Clamp(remainingSprites, 0, healthImages.Count);
 
         for (int i = 0; i < healthImages.Count; i++)
@@ -79,7 +85,6 @@ public class BHPlayerHeaalth : MonoBehaviour
         Debug.Log("Player is dead!");
 
         AudioListener.pause = true;
-
         Time.timeScale = 0;
 
         if (deathCanvas != null)
@@ -91,7 +96,6 @@ public class BHPlayerHeaalth : MonoBehaviour
             Debug.LogWarning("Death canvas is not assigned in the inspector!");
         }
 
-        // Disable other canvases
         foreach (GameObject canvas in otherCanvases)
         {
             if (canvas != null)
@@ -99,6 +103,5 @@ public class BHPlayerHeaalth : MonoBehaviour
                 canvas.SetActive(false);
             }
         }
-
     }
 }

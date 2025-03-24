@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,12 +26,9 @@ public class AbortButton : MonoBehaviour
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
             Debug.Log("Loading scene: " + sceneToLoad);
-
-            // Ensure game is unpaused before loading the scene
             PauseMenu.TogglePause();
-            Time.timeScale = 1f;
-
             SceneManager.LoadScene(sceneToLoad);
+
         }
         else
         {

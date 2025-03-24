@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -7,12 +7,13 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
-    public AudioMixer audioMixer; // Optional: Assign this in Unity for volume control
+    public AudioMixer audioMixer; // Assign this in Unity
 
-    private List<AudioSource> bgmSources = new List<AudioSource>();  // Stores all BGM sources
-    private List<AudioSource> sfxSources = new List<AudioSource>();  // Stores all SFX sources
+    private List<AudioSource> bgmSources = new List<AudioSource>();
+    private List<AudioSource> sfxSources = new List<AudioSource>();
 
     private const string VolumeKey = "Volume_";
+    private float lastMasterVolume = 1f;
 
     private void Awake()
     {
@@ -29,27 +30,27 @@ public class SFXManager : MonoBehaviour
 
     private void Start()
     {
-        // Find and store all audio sources in the tagged GameObjects
         FindAudioSourcesByTag("BGM", ref bgmSources);
         FindAudioSourcesByTag("SFX", ref sfxSources);
 
-        // Load and apply saved volume settings
         float masterVolume = PlayerPrefs.GetInt(VolumeKey + "Master", 10) / 10f;
         float bgmVolume = PlayerPrefs.GetInt(VolumeKey + "BGM", 10) / 10f;
         float sfxVolume = PlayerPrefs.GetInt(VolumeKey + "SFX", 10) / 10f;
 
+        Debug.Log($"[DEBUG] Before Applying Volumes: Master({masterVolume}) BGM({bgmVolume}) SFX({sfxVolume})");
+
         SetVolumeByTag("Master", masterVolume);
-        SetVolumeByTag("BGM", bgmVolume);
-        SetVolumeByTag("SFX", sfxVolume);
+        SetVolumeByTag("BGM", bgmVolume * masterVolume);
+        SetVolumeByTag("SFX", sfxVolume * masterVolume);
+
+        Debug.Log($"[DEBUG] After Applying Volumes: Master({masterVolume}) BGM({bgmVolume * masterVolume}) SFX({sfxVolume * masterVolume})");
     }
 
     private void FindAudioSourcesByTag(string tag, ref List<AudioSource> audioSourcesList)
     {
-        // Find GameObject by tag
         GameObject audioContainer = GameObject.FindGameObjectWithTag(tag);
         if (audioContainer != null)
         {
-            // Get all AudioSources inside that GameObject
             audioSourcesList.AddRange(audioContainer.GetComponentsInChildren<AudioSource>());
         }
         else
@@ -60,22 +61,41 @@ public class SFXManager : MonoBehaviour
 
     public void SetVolumeByTag(string tag, float volume)
     {
+        float adjustedVolume = Mathf.Max(volume, 0.0001f);
+
         if (audioMixer != null)
         {
-            audioMixer.SetFloat(tag, Mathf.Log10(volume) * 20); // Convert linear 0-1 to dB
+            float dbValue = Mathf.Log10(adjustedVolume) * 20;
+            audioMixer.SetFloat(tag, dbValue);
+
+            float checkValue;
+            audioMixer.GetFloat(tag, out checkValue);
+            Debug.Log($"[DEBUG] {tag} Volume Set: {dbValue} dB | Confirmed: {checkValue} dB");
         }
 
         if (tag == "Master")
         {
-            AudioListener.volume = volume;
+            if (volume > 0)
+            {
+                lastMasterVolume = volume;
+                AudioListener.pause = false;
+            }
+
+            AudioListener.volume = adjustedVolume;
+        }
+        else if (tag == "BGM")
+        {
+            foreach (var source in bgmSources)
+            {
+                source.volume = adjustedVolume;
+            }
         }
         else if (tag == "SFX")
         {
             foreach (var source in sfxSources)
             {
-                source.volume = volume;
+                source.volume = adjustedVolume;
             }
-            Debug.Log($"SFX Volume Set: {volume}");
         }
     }
 
@@ -83,26 +103,26 @@ public class SFXManager : MonoBehaviour
     {
         if (clip == null || sfxSources.Count == 0) return;
 
-        // Find an available (not playing) AudioSource, or use the first one
+        float sfxVolume = Mathf.Max(PlayerPrefs.GetInt(VolumeKey + "SFX", 10) / 10f, 0.0001f);
+        float masterVolume = Mathf.Max(PlayerPrefs.GetInt(VolumeKey + "Master", 10) / 10f, 0.0001f);
+        float finalVolume = sfxVolume * masterVolume;
+
         foreach (var source in sfxSources)
         {
             if (!source.isPlaying)
             {
+                source.volume = finalVolume;
                 source.PlayOneShot(clip);
                 return;
             }
         }
 
-        // If all sources are busy, play on the first one (fallback)
+        sfxSources[0].volume = finalVolume;
         sfxSources[0].PlayOneShot(clip);
     }
 
     public AudioSource GetSFXSource()
     {
-        if (sfxSources.Count > 0)
-        {
-            return sfxSources[0]; // Return the first SFX source
-        }
-        return null;
+        return sfxSources.Count > 0 ? sfxSources[0] : null;
     }
 }

@@ -446,7 +446,7 @@ AudioSource:
   m_GameObject: {fileID: 71024519}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4487811093773302116, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0a8590569a3306c43a6d46905c661841, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -7983,7 +7983,7 @@ GameObject:
   - component: {fileID: 1716663976}
   m_Layer: 0
   m_Name: MenuController
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8012,7 +8012,7 @@ AudioSource:
   m_GameObject: {fileID: 1716663974}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3024145267270767768, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

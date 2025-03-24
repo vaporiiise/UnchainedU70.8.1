@@ -91,7 +91,7 @@ public class MenuController : MonoBehaviour
             return;
         }
 
-        Debug.Log(" Playing Click Sound...");
+        //Debug.Log(" Playing Click Sound...");
         sfxAudioSource.PlayOneShot(buttonClickSound);
 
         //private void PlayClickSound()
