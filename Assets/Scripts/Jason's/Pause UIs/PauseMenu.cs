@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
@@ -12,12 +10,17 @@ public class PauseMenu : MonoBehaviour
     public GameObject exitPanel;
     public GameObject player;
 
-    public GameUIController gameUIController; // Drag your GameUIController script here
+    public GameUIController gameUIController;
 
     [SerializeField]
     private KeyCode pauseKey = KeyCode.Escape;
 
     private MonoBehaviour[] playerScripts;
+
+    [Header("Dialogue Systems to Pause")]
+    [SerializeField] private List<DialogueSystem> dialogueSystems = new List<DialogueSystem>(); // ✅ Shows in Inspector
+
+    private List<DialogueSystem> pausedDialogues = new List<DialogueSystem>(); // Stores only active dialogues
 
     void Start()
     {
@@ -32,7 +35,7 @@ public class PauseMenu : MonoBehaviour
 
         if (gameUIController != null)
         {
-            gameUIController.enabled = false; // Ensure it starts disabled
+            gameUIController.enabled = false;
         }
     }
 
@@ -65,8 +68,10 @@ public class PauseMenu : MonoBehaviour
 
         if (gameUIController != null)
         {
-            gameUIController.enabled = false; // Disable GameUIController when unpausing
+            gameUIController.enabled = false;
         }
+
+        ResumePausedDialogues(); // ✅ Resume dialogues
     }
 
     void Pause()
@@ -79,8 +84,32 @@ public class PauseMenu : MonoBehaviour
 
         if (gameUIController != null)
         {
-            gameUIController.enabled = true; // Enable GameUIController when paused
+            gameUIController.enabled = true;
         }
+
+        PauseActiveDialogues(); // ✅ Pause only active dialogues
+    }
+
+    void PauseActiveDialogues()
+    {
+        pausedDialogues.Clear();
+        foreach (DialogueSystem dialogue in dialogueSystems)
+        {
+            if (dialogue.IsDialogueActive())
+            {
+                dialogue.enabled = false;
+                pausedDialogues.Add(dialogue); // ✅ Store for resuming
+            }
+        }
+    }
+
+    void ResumePausedDialogues()
+    {
+        foreach (DialogueSystem dialogue in pausedDialogues)
+        {
+            dialogue.enabled = true;
+        }
+        pausedDialogues.Clear();
     }
 
     public void OpenSettingsPanel()

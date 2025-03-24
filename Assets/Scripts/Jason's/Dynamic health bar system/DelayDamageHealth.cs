@@ -8,46 +8,49 @@ public class DelayDamageHealth : MonoBehaviour
     public Slider mainHealthBarSlider;
     public Slider damagedHealthBarSlider;
 
-    public bossAI enemyScript;
+    public bossHealth enemyHealth; // Reference to bossHealth script
 
-    public float delayTime = 1f;        // Delay time before health bar starts following
-    public float smoothSpeed = 2f;      // Higher = faster | Lower = Smoother
+    public float delayTime = 1f;        // Delay time before the delayed health bar starts following
+    public float smoothSpeed = 2f;      // Higher = faster | Lower = smoother
 
-    private float targetHealth;
     private float previousHealth;
     private float damageTimer;
     private bool isDamageReceived;
 
     private void Start()
     {
-        if (mainHealthBarSlider != null && enemyScript != null)
+        if (mainHealthBarSlider != null && enemyHealth != null)
         {
-            mainHealthBarSlider.maxValue = enemyScript.bossMaxHealth;
-            damagedHealthBarSlider.maxValue = enemyScript.bossMaxHealth;
+            mainHealthBarSlider.maxValue = enemyHealth.maxHealth;
+            damagedHealthBarSlider.maxValue = enemyHealth.maxHealth;
         }
         else
         {
-            Debug.LogError("Missing reference to mainHealthBarSlider or enemyScript.");
+            Debug.LogError("Missing reference to mainHealthBarSlider or enemyHealth.");
         }
 
-        targetHealth = mainHealthBarSlider.value;
-        previousHealth = mainHealthBarSlider.value;
+        mainHealthBarSlider.value = enemyHealth.currentHealth;
+        damagedHealthBarSlider.value = enemyHealth.currentHealth;
+        previousHealth = enemyHealth.currentHealth;
         damageTimer = delayTime;
         isDamageReceived = false;
     }
 
     private void Update()
     {
-        if (mainHealthBarSlider == null || damagedHealthBarSlider == null || enemyScript == null)
+        if (mainHealthBarSlider == null || damagedHealthBarSlider == null || enemyHealth == null)
         {
-            Debug.LogError("Missing reference to sliders or enemyScript.");
+            Debug.LogError("Missing reference to sliders or enemyHealth.");
             return;
         }
 
-        if (mainHealthBarSlider.value < previousHealth)
+        // Sync main health bar with the boss' actual health
+        mainHealthBarSlider.value = enemyHealth.currentHealth;
+
+        if (enemyHealth.currentHealth < previousHealth)
         {
             isDamageReceived = true;
-            damageTimer = delayTime;
+            damageTimer = delayTime; // Reset delay timer when taking damage
         }
         else
         {
@@ -65,9 +68,7 @@ public class DelayDamageHealth : MonoBehaviour
             }
         }
 
-        previousHealth = mainHealthBarSlider.value;
-
-        //Debug.Log($"Enemy Main Health: {mainHealthBarSlider.value}, Enemy Damaged Health: {damagedHealthBarSlider.value}, Enemy Damage Timer: {damageTimer}");
+        previousHealth = enemyHealth.currentHealth;
     }
 
     private IEnumerator SmoothHealthUpdate()
@@ -88,4 +89,5 @@ public class DelayDamageHealth : MonoBehaviour
 
         damagedHealthBarSlider.value = targetHealth;
     }
+
 }

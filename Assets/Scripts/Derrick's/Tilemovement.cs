@@ -29,6 +29,8 @@ public class Tilemovement : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.GameIsPaused) return; // Prevent movement when paused
+
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Move(Vector2.up)) PlayMoveSound();
