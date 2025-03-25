@@ -11,7 +11,7 @@ public class HealthVignetteEffect : MonoBehaviour
     public Image vignetteImage; // Drag & Drop the red overlay image
 
     [Header("Vignette Settings")]
-    public float maxAlpha = 0.5f;  // Max red intensity
+    public float maxAlpha = 0.5f;  // Max intensity of the vignette
     public float fadeSpeed = 2f;   // How fast it fades in/out
 
     [Header("Pulsing Settings")]
@@ -47,7 +47,8 @@ public class HealthVignetteEffect : MonoBehaviour
             playerHealth = FindObjectOfType<BHPlayerHeaalth>();
         }
 
-        vignetteImage.color = new Color(1f, 0f, 0f, 0f); // Fully transparent at start
+        // Keep the color set in the inspector, only reset alpha to 0
+        vignetteImage.color = new Color(vignetteImage.color.r, vignetteImage.color.g, vignetteImage.color.b, 0f);
     }
 
     private void Update()
@@ -71,9 +72,9 @@ public class HealthVignetteEffect : MonoBehaviour
             if (!isPaused)
             {
                 pulseTimer += Time.deltaTime;
-                float pulseAlpha = Mathf.Abs(Mathf.Sin(pulseTimer * Mathf.PI * 2f)) * pulseStrength;
+                float pulseAlpha = Mathf.Abs(Mathf.Sin(pulseTimer * Mathf.PI * 1.8f)) * pulseStrength;
 
-                vignetteImage.color = new Color(1f, 0f, 0f, Mathf.Clamp(targetAlpha + pulseAlpha, 0f, maxAlpha));
+                vignetteImage.color = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Clamp(targetAlpha + pulseAlpha, 0f, maxAlpha));
 
                 if (pulseTimer >= heartbeatInterval * 0.5f)
                 {
@@ -100,8 +101,7 @@ public class HealthVignetteEffect : MonoBehaviour
         else
         {
             Color currentColor = vignetteImage.color;
-            currentColor.a = Mathf.Lerp(currentColor.a, 0f, Time.deltaTime * fadeSpeed);
-            vignetteImage.color = currentColor;
+            vignetteImage.color = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Lerp(currentColor.a, 0f, Time.deltaTime * fadeSpeed));
         }
     }
 }

@@ -46,7 +46,18 @@ public class BossMusicManager : MonoBehaviour
     private void OnSceneChanging(Scene current, Scene next)
     {
         StopAllCoroutines();
-        StartCoroutine(RestartBackgroundMusic());
+
+        if (next.name == "BossHall") // Make sure BGM will only play in this scene
+        {
+            PlayBackgroundMusic();
+        }
+        else
+        {
+            backgroundMusicSource.Stop();
+        }
+
+        //StopAllCoroutines();
+        //StartCoroutine(RestartBackgroundMusic());
     }
 
     private IEnumerator RestartBackgroundMusic()

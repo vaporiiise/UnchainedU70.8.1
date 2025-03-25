@@ -32229,12 +32229,12 @@ MonoBehaviour:
   heartBeater: {fileID: 705362991}
   playerHealth: {fileID: 352516702}
   vignetteImage: {fileID: 923341856}
-  maxAlpha: 0.5
-  fadeSpeed: 1
-  pulseStrength: 0.15
-  pulseSpeedMultiplier: 1
+  maxAlpha: 1
+  fadeSpeed: 0.1
+  pulseStrength: 0.4
+  pulseSpeedMultiplier: 1.5
   beatsPerCycle: 2
-  pauseDuration: 0.5
+  pauseDuration: 0.7
 --- !u!1 &710663531
 GameObject:
   m_ObjectHideFlags: 0
@@ -43784,7 +43784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33962262, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.4339623, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
