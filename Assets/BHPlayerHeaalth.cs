@@ -104,4 +104,9 @@ public class BHPlayerHeaalth : MonoBehaviour
             }
         }
     }
+
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
 }
