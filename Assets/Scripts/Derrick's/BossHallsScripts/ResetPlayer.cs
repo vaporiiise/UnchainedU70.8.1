@@ -14,6 +14,8 @@ public class ResetPlayer : MonoBehaviour
             float z = PlayerPrefs.GetFloat("SavedZ");
             transform.position = new Vector3(x, y, z);
         }
+
+        PlayerPrefs.GetInt("currentHealth");
     }
 
     private void Update()
@@ -22,5 +24,10 @@ public class ResetPlayer : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    void SaveBossHealth()
+    {
+        
     }
 }
