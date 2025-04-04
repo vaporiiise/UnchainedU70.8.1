@@ -53,7 +53,7 @@ public class BossDoorTrigger : MonoBehaviour
     private void Start()
     {
         bossHealth = FindObjectOfType<bossHealth>();
-        triggerActivated = false; // Ensures it's always reset when the scene reloads
+        triggerActivated = false; 
         timerText.gameObject.SetActive(false);
         timer = timeLimit;
     
@@ -117,8 +117,8 @@ public class BossDoorTrigger : MonoBehaviour
         if (triggerActivated || !other.CompareTag("Player"))
             return;
     
-        StartTimer();  // Start the timer first
-        triggerActivated = true; // Now prevent re-triggering
+        StartTimer();  
+        triggerActivated = true; 
     }
 
     private void StartTimer()
@@ -131,8 +131,8 @@ public class BossDoorTrigger : MonoBehaviour
     private void StopTimer()
     {
         timerRunning = false;
-        StopAllCoroutines(); // Stops ticking sound
-        timerText.gameObject.SetActive(false); // Hide timer UI
+        StopAllCoroutines(); 
+        timerText.gameObject.SetActive(false); 
     }
 
     private IEnumerator PlayTickSound()
@@ -296,9 +296,9 @@ public class BossDoorTrigger : MonoBehaviour
 
     private IEnumerator WaitForDialogueToEnd()
     {
-        while (dialogueSystem.IsDialogueActive()) // Ensure this method exists in DialogueSystem
+        while (dialogueSystem.IsDialogueActive()) 
         {
-            yield return null; // Wait until dialogue ends
+            yield return null; 
         }
 
         if (objectToEnable != null)

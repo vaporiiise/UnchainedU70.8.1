@@ -17,7 +17,7 @@ public class CameraLock : MonoBehaviour
     private bool isCameraLocked = false; // Check if the camera is locked
     private float originalCameraSize; // Store the original camera size
     private Vector3 originalCameraPosition; // Store the original camera position
-    private float smoothTime = 0.3f; // Time for smooth transitions
+    //private float smoothTime = 0.3f; // Time for smooth transitions
 
     //public MonoBehaviour scriptToDisable; // Reference to the script that should be disabled
 

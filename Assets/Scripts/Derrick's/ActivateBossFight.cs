@@ -12,10 +12,10 @@ public class ActivateBossFight : MonoBehaviour
     public GameObject objectToActivate;
 
     [Header("Text Display Effect")]
-    public TMP_Text effectText; // Assign a TMP Text in the inspector
+    public TMP_Text effectText; 
     public float fadeDuration = 1.5f;
     public float scaleDecreaseSpeed = 0.5f;
-    public float effectDuration = 2f; // Total time the text is visible
+    public float effectDuration = 2f; 
 
     [Header("Script Activation")]
     public MonoBehaviour scriptToActivate;
@@ -27,28 +27,23 @@ public class ActivateBossFight : MonoBehaviour
 
     private IEnumerator SequenceRoutine()
     {
-        // Step 1: Trigger dialogue
         if (dialogueSystem != null)
         {
             dialogueSystem.BeginDialogue();
         }
 
-        // Step 2: Wait 5 seconds
         yield return new WaitForSeconds(5f);
 
-        // Step 3: Activate GameObject
         if (objectToActivate != null)
         {
             objectToActivate.SetActive(true);
         }
 
-        // Step 4: Display and animate text effect
         if (effectText != null)
         {
             yield return StartCoroutine(ShowTextEffect());
         }
 
-        // Step 5: Enable the specified script
         if (scriptToActivate != null)
         {
             scriptToActivate.enabled = true;
@@ -61,7 +56,6 @@ public class ActivateBossFight : MonoBehaviour
         effectText.color = new Color(effectText.color.r, effectText.color.g, effectText.color.b, 0);
         effectText.transform.localScale = Vector3.one;
 
-        // Fade in
         float elapsedTime = 0f;
         while (elapsedTime < fadeDuration)
         {
@@ -71,10 +65,8 @@ public class ActivateBossFight : MonoBehaviour
             yield return null;
         }
 
-        // Hold for effectDuration
         yield return new WaitForSeconds(effectDuration);
 
-        // Decrease scale & fade out
         elapsedTime = 0f;
         Vector3 originalScale = effectText.transform.localScale;
         while (elapsedTime < fadeDuration)
@@ -86,7 +78,6 @@ public class ActivateBossFight : MonoBehaviour
             yield return null;
         }
 
-        // Hide text after animation
         effectText.gameObject.SetActive(false);
     }
 }

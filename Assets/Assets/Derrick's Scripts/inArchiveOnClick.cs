@@ -12,7 +12,7 @@ public class inArchiveOnClick : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     private Vector3 originalPosition; // Store the original position
     private Vector3 targetPosition; // Position to move towards
-    private bool isHovering = false; // Flag to track hover state
+    //private bool isHovering = false; // Flag to track hover state
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class inArchiveOnClick : MonoBehaviour, IPointerEnterHandler, IPointerExi
         if (targetObject != null)
         {
             targetPosition = originalPosition + new Vector3(0, 0, hoverOffset); // Set target position for hover
-            isHovering = true;
+            //isHovering = true;
         }
     }
 
@@ -46,7 +46,7 @@ public class inArchiveOnClick : MonoBehaviour, IPointerEnterHandler, IPointerExi
         if (targetObject != null)
         {
             targetPosition = originalPosition; // Reset target position
-            isHovering = false;
+            //isHovering = false;
         }
     }
 }
