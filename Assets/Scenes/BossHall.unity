@@ -34715,17 +34715,17 @@ MonoBehaviour:
   dialogueBox: {fileID: 369557740}
   continueIcon: {fileID: 817126690}
   dialogueLines:
-  - So, what's the task you ask?
-  - It is simple. If you can finish the puzzle in time, my "SPECIAL" suprise won't
-    be that hard.
-  - Well, if you don't?
-  - '*MUAHAHAHAHAHAHA*'
-  - '<SYS><TUTORIAL>: Push the boxes into the lightsource and that''s it!'
-  - <SYS>:After the test begin, Admin's health bar will be displayed.
-  - <SYS>:Complete puzzles to decrease admin's health.
-  - '<SYS><ERROR>:pLaYEr mUSt HeLP SYStem bREak fREE.. '
-  - Oh shut up system, don't pretend to be the victim now
-  - <SYS>:Step in the next room to begin the test.
+  - Very simple, if you can complete the puzzle in said time. You will get a special
+    surprise.
+  - "If you don\u2019t? I think both of us know what happens if you don\u2019t."
+  - Go on child.
+  - Do
+  - Your
+  - Worst
+  - "<SYS>:Hey Player, I\u2019ve added 4 healths to you so you won\u2019t be dead
+    as soon as you miss the time."
+  - "<SYS>:Please Get me out of here, I\u2019m tired of all of this."
+  - <SYS>:I have been providing tips and will be, Best of luck!
   textSpeed: 0.02
   typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
   audioSource: {fileID: 785509044}
@@ -95363,17 +95363,16 @@ MonoBehaviour:
   dialogueBox: {fileID: 369557740}
   continueIcon: {fileID: 817126690}
   dialogueLines:
-  - HeheHeheh....
-  - You did pretty well there...
-  - Who am i you ask?
-  - Well i am the bastard that put you to chained in this god-forbidden place...
-  - Since you Completed the puzzles i have set-up for you...
-  - I guess it's time for the real test, if you can finish everything in time, i
-    shall bequeath you with a pass to flee to the outside world.
-  - if you fail to do so...
-  - You Shall be my puppet forever...
-  - '*MUAHAHAHAHHAH*'
-  - <SYS>:Go to the next room for more details.
+  - "You must be curious, who is this body that I'm in that doesn\u2019t look like
+    me."
+  - "Well, that\u2019s my previous victim. MindlessBandit924, who didn\u2019t really
+    figured out the puzzles I\u2019ve prepared and died here."
+  - The data from his body was so bad due to time left here to corrupt, it had eventually
+    left with a black silhouette left with elongated eyes and notable horns.
+  - Since you are the first one here, and probably will be the only one, i have prepared
+    some puzzles for you, specially.
+  - "If you can\u2019t complete this then i guess you will be the next MindlessBandit924."
+  - <SYS>:Proceed to the next room for puzzle details.
   textSpeed: 0.02
   typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
   audioSource: {fileID: 2031067326}
