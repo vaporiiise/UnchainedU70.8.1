@@ -10,14 +10,25 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Save position
             PlayerPrefs.SetFloat("SavedX", transform.position.x);
             PlayerPrefs.SetFloat("SavedY", transform.position.y);
+
+            // Save health from bossHealth script
+            bossHealth bh = other.GetComponent<bossHealth>();
+            if (bh != null)
+            {
+                PlayerPrefs.SetInt("SavedHealth", bh.currentHealth);
+            }
+
             PlayerPrefs.Save();
 
             if (objectToActivate != null)
             {
                 objectToActivate.SetActive(true);
             }
+
+            Debug.Log("Checkpoint reached — position and health saved!");
         }
     }
 }

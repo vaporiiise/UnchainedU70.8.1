@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Navigating Halls.unity
     guid: e811aa0f69801154aa1e76b5c62714a4
   - enabled: 1
-    path: Assets/Scenes/CreditsScreen.unity
-    guid: c5b27685fb7d8d345972163ac6ab6f0b
-  - enabled: 1
     path: Assets/Scenes/BossHall.unity
     guid: 156c028c978408042ab6328e8939cd83
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: c5b27685fb7d8d345972163ac6ab6f0b
   - enabled: 0
     path: Assets/Scenes/Main Menu NEW.unity
     guid: e68d8253e7c01714c93db890f675bd3f
