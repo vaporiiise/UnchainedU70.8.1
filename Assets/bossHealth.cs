@@ -16,16 +16,28 @@ public class bossHealth : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (PlayerPrefs.HasKey("SavedHealth"))
+        {
+            currentHealth = PlayerPrefs.GetInt("SavedHealth");
+        }
+        else
+        {
+            currentHealth = maxHealth;
+        }
 
-        // Ensure the shakeHealthBar is assigned properly
+        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth); // Keep the bar in sync
+
         if (shakeHealthBar == null)
         {
-            shakeHealthBar = FindObjectOfType<ShakeHealthBar>(); // Find in the scene
+            shakeHealthBar = FindObjectOfType<ShakeHealthBar>();
         }
+
         audioSource = GetComponent<AudioSource>();
+
+        Debug.Log("Health loaded: " + currentHealth);
     }
+
 
     private void Update()
     {
@@ -39,15 +51,16 @@ public class bossHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        
+
         if (shakeHealthBar != null)
         {
-            shakeHealthBar.HealthBarShake(); // Call shake function
+            shakeHealthBar.HealthBarShake();
         }
         else
         {
             Debug.LogWarning("ShakeHealthBar script is not assigned!");
         }
+
         audioSource.PlayOneShot(tookDamage);
     }
 
@@ -55,6 +68,12 @@ public class bossHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            // Save current health before scene change
+            if (BossHealthGameManager.Instance != null)
+            {
+                BossHealthGameManager.Instance.savedHealth = currentHealth;
+            }
+
             SceneManager.LoadScene(sceneName);
         }
     }
