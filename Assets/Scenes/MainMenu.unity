@@ -6086,7 +6086,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3024145267270767768, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d660d87ccd7563548b407c0f210f940d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 76dc5129ea3538647a1633097dc035f6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8106,7 +8106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716663974}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4913ee64e1b9dc649a3170b03467894c, type: 3}
   m_Name: 
@@ -8131,7 +8131,7 @@ MonoBehaviour:
   - {fileID: 264407928}
   - {fileID: 1923727204}
   sfxAudioSource: {fileID: 1716663976}
-  buttonClickSound: {fileID: 8300000, guid: d660d87ccd7563548b407c0f210f940d, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 76dc5129ea3538647a1633097dc035f6, type: 3}
   buttonHoverSound: {fileID: 8300000, guid: 78af5d37cbd17934295d5e8ea3eaa55c, type: 3}
 --- !u!114 &1716663978
 MonoBehaviour:
