@@ -9,7 +9,7 @@ public class bossHealth : MonoBehaviour
     public int maxHealth = 200;
     public int currentHealth;
     public HealthBar healthBar;
-    public int sceneInt = 3;
+    public string sceneName = "BossHall";
     public ShakeHealthBar shakeHealthBar;
     public AudioClip tookDamage;
     private AudioSource audioSource;
@@ -55,7 +55,7 @@ public class bossHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene(sceneInt);
+            SceneManager.LoadScene(sceneName);
         }
     }
 }
