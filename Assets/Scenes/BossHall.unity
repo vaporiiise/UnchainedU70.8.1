@@ -21079,7 +21079,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3024145267270767768, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d660d87ccd7563548b407c0f210f940d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 76dc5129ea3538647a1633097dc035f6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -57932,6 +57932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   spawnPosition: {x: 0, y: 0, z: 0}
+  pauseMenu: {fileID: 0}
 --- !u!114 &1393884550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80595,6 +80596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 352516688}
   spawnPosition: {x: -23.5, y: -1.5, z: 0}
+  pauseMenu: {fileID: 0}
 --- !u!114 &1833043937
 MonoBehaviour:
   m_ObjectHideFlags: 0
