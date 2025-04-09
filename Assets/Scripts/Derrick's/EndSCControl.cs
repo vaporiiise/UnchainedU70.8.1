@@ -7,6 +7,7 @@ public class EndSCControl : MonoBehaviour
 {
     public Transform player; 
     public Vector3 spawnPosition; 
+    public PauseMenu pauseMenu;
 
     public void RestartGame()
     {
@@ -25,6 +26,7 @@ public class EndSCControl : MonoBehaviour
 
         Time.timeScale = 1; 
         AudioListener.pause = false;
+        pauseMenu.Resume();
 
         SceneManager.LoadScene(2); 
     }
