@@ -1010,7 +1010,7 @@ MonoBehaviour:
   settingsPanel: {fileID: 354495956}
   exitPanel: {fileID: 1548814626}
   player: {fileID: 352516687}
-  gameUIController: {fileID: 0}
+  buttonUIController: {fileID: 223037114}
   pauseKey: 27
   dialogueSystems:
   - {fileID: 2031067324}
@@ -4925,7 +4925,7 @@ MonoBehaviour:
   shakeDuration: 0.2
   shakeIntensity: 0.2
   spriteFadeSpeed: 1.5
-  dialogueSystem: {fileID: 1501618810}
+  dialogueSystem: {fileID: 1434260914}
   timerText: {fileID: 562821138}
   timeLimit: 50
   timerBox: {fileID: 437819589}
@@ -5309,7 +5309,7 @@ GameObject:
   - component: {fileID: 209132756}
   - component: {fileID: 209132757}
   m_Layer: 0
-  m_Name: Dialogue System (3)
+  m_Name: Dialogue System (Puzzle 3)
   m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5331,11 +5331,10 @@ MonoBehaviour:
   dialogueBox: {fileID: 369557740}
   continueIcon: {fileID: 817126690}
   dialogueLines:
-  - 'heh. '
-  - how was that, pretty hard huh...
-  - now let's us not waste our precious time
-  - On to the next one, i shall see you suffer
-  - '<SYS>: Final Room reached. Good Luck.'
+  - Nah I was trying to give you a free pass.
+  - Trust.
+  - The next will be hard.
+  - '<SYS>: Proceed to the next room to continue.'
   textSpeed: 0.02
   typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
   audioSource: {fileID: 209132757}
@@ -5935,7 +5934,7 @@ GameObject:
   - component: {fileID: 223037112}
   - component: {fileID: 223037111}
   - component: {fileID: 223037110}
-  - component: {fileID: 223037109}
+  - component: {fileID: 223037114}
   - component: {fileID: 223037108}
   - component: {fileID: 223037107}
   m_Layer: 5
@@ -6054,32 +6053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
---- !u!114 &223037109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223037106}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc90c2f56ae094a439cd40652416d953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuButtons:
-  - {fileID: 1130402348}
-  - {fileID: 1508434230}
-  - {fileID: 1641020999}
-  - {fileID: 656208568}
-  - {fileID: 1433293962}
-  - {fileID: 1433979386}
-  - {fileID: 39135888}
-  - {fileID: 904026874}
-  - {fileID: 1672130258}
-  - {fileID: 876318736}
-  sfxAudioSource: {fileID: 223037107}
-  buttonClickSound: {fileID: 8300000, guid: d660d87ccd7563548b407c0f210f940d, type: 3}
-  buttonHoverSound: {fileID: 8300000, guid: 78af5d37cbd17934295d5e8ea3eaa55c, type: 3}
 --- !u!114 &223037110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6162,6 +6135,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &223037114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223037106}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef5e0c2957d419438404ce6ecb6b18a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButtons:
+  - {fileID: 1130402348}
+  - {fileID: 1508434230}
+  - {fileID: 1641020999}
+  - {fileID: 656208568}
+  - {fileID: 1433293962}
+  - {fileID: 1433979386}
+  - {fileID: 39135888}
+  - {fileID: 904026874}
+  - {fileID: 880190110}
+  - {fileID: 1672130258}
+  - {fileID: 876318736}
+  sfxAudioSource: {fileID: 223037107}
+  buttonClickSound: {fileID: 8300000, guid: 76dc5129ea3538647a1633097dc035f6, type: 3}
 --- !u!1 &230896970
 GameObject:
   m_ObjectHideFlags: 0
@@ -14622,7 +14621,6 @@ GameObject:
   - component: {fileID: 354495960}
   - component: {fileID: 354495959}
   - component: {fileID: 354495958}
-  - component: {fileID: 354495957}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -14630,22 +14628,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &354495957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354495956}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a6f4513fade3d43a5f2d7b73653b9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
-  backgroundMusic: {fileID: 0}
-  sfxSlider: {fileID: 0}
-  soundEffects: []
 --- !u!114 &354495958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34540,7 +34522,7 @@ GameObject:
   - component: {fileID: 785509043}
   - component: {fileID: 785509044}
   m_Layer: 0
-  m_Name: Dialogue System (1)
+  m_Name: Dialogue System (talk 1)
   m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51705,7 +51687,7 @@ MonoBehaviour:
   shakeDuration: 0.2
   shakeIntensity: 0.2
   spriteFadeSpeed: 1.5
-  dialogueSystem: {fileID: 209132756}
+  dialogueSystem: {fileID: 1666028992}
   timerText: {fileID: 562821138}
   timeLimit: 5
   timerBox: {fileID: 437819589}
@@ -59116,6 +59098,161 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433979384}
   m_CullTransparentMesh: 1
+--- !u!1 &1434260912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434260915}
+  - component: {fileID: 1434260914}
+  - component: {fileID: 1434260913}
+  m_Layer: 0
+  m_Name: Dialogue System (Puzzle 1)
+  m_TagString: SFX
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1434260913
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434260912}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -3024145267270767768, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1434260914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434260912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89d82e9c0206314798b4d6e205ac061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 767536599}
+  dialogueBox: {fileID: 369557740}
+  continueIcon: {fileID: 817126690}
+  dialogueLines:
+  - Wait what?
+  - "My bad, that\u2019s the script I used when I wanted to test the mechanics."
+  - NEVERMIND!
+  - The next will be IMPOSSIBLE!!!
+  - '<SYS>: Proceed to the next room to continue..'
+  textSpeed: 0.02
+  typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
+  audioSource: {fileID: 1434260913}
+  fadeOutDuration: 0.2
+  scriptToDisable: {fileID: 352516696}
+--- !u!4 &1434260915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434260912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1445887736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60996,7 +61133,7 @@ GameObject:
   - component: {fileID: 1501618810}
   - component: {fileID: 1501618811}
   m_Layer: 0
-  m_Name: Dialogue System (2)
+  m_Name: Dialogue System (Puzzle 2)
   m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61018,14 +61155,11 @@ MonoBehaviour:
   dialogueBox: {fileID: 369557740}
   continueIcon: {fileID: 817126690}
   dialogueLines:
-  - Pretty hard huh?
-  - 'What?! It''s easy??? '
-  - Well, sorry it was a bug in my code.
-  - NEVERMIND
-  - the next one will be hard
-  - TRUST
-  - '*MUAHAHAHAHAHA*'
-  - '<SYS>: Proceed to the next room to begin the next test.'
+  - HUH?!
+  - Ahem, i mean
+  - Not bad, for a beginner.
+  - '*Laughs at his lame joke*'
+  - '<SYS>: Proceed to the next room to continue.'
   textSpeed: 0.02
   typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
   audioSource: {fileID: 1501618811}
@@ -76345,6 +76479,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661360728}
   m_CullTransparentMesh: 1
+--- !u!1 &1666028990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666028993}
+  - component: {fileID: 1666028992}
+  - component: {fileID: 1666028991}
+  m_Layer: 0
+  m_Name: Dialogue System (Puzzle 4)
+  m_TagString: SFX
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1666028991
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666028990}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -3024145267270767768, guid: 7ffe6df2c777a814db2d159772e8f612, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1666028992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666028990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89d82e9c0206314798b4d6e205ac061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 767536599}
+  dialogueBox: {fileID: 369557740}
+  continueIcon: {fileID: 817126690}
+  dialogueLines:
+  - Oh? Took you a while huh?
+  - Guess you will be meeting me real soon.
+  - Get ready to dodge.
+  - Like how i like to dodge human interactions.
+  - '<SYS>: Final stage reached.'
+  - '<SYS>: Dodge the laser beams.'
+  - '<SYS>: Push the boxes into the light.'
+  - '<SYS>: Proceed to the next room to continue.'
+  - '<SYS>: Good Luck Player.'
+  textSpeed: 0.02
+  typingSound: {fileID: 8300000, guid: e48f7868eb038be4a804c3a455470b8e, type: 3}
+  audioSource: {fileID: 1666028991}
+  fadeOutDuration: 0.2
+  scriptToDisable: {fileID: 352516696}
+--- !u!4 &1666028993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666028990}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1668235063
 GameObject:
   m_ObjectHideFlags: 0
@@ -89372,7 +89665,7 @@ MonoBehaviour:
   shakeDuration: 0.2
   shakeIntensity: 0.2
   spriteFadeSpeed: 1.5
-  dialogueSystem: {fileID: 209132756}
+  dialogueSystem: {fileID: 1501618810}
   timerText: {fileID: 562821138}
   timeLimit: 10
   timerBox: {fileID: 437819589}
@@ -95032,7 +95325,7 @@ GameObject:
   - component: {fileID: 2031067324}
   - component: {fileID: 2031067326}
   m_Layer: 0
-  m_Name: Dialogue System
+  m_Name: Dialogue System (talk)
   m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106226,8 +106519,10 @@ SceneRoots:
   - {fileID: 1000872848}
   - {fileID: 2031067325}
   - {fileID: 785509045}
+  - {fileID: 1434260915}
   - {fileID: 1501618812}
   - {fileID: 209132758}
+  - {fileID: 1666028993}
   - {fileID: 1611330369}
   - {fileID: 83860860}
   - {fileID: 1730669483}

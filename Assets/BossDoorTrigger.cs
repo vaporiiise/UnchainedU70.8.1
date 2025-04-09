@@ -140,7 +140,8 @@ public class BossDoorTrigger : MonoBehaviour
         while (timerRunning && timer > 0)
         {
             if (tickSound != null)
-                AudioSource.PlayClipAtPoint(tickSound, transform.position, 1.0f);
+                SFXManager.instance.PlaySFX(tickSound);
+            //AudioSource.PlayClipAtPoint(tickSound, transform.position, 1.0f);
             yield return new WaitForSeconds(1f);
         }
     }
@@ -187,7 +188,8 @@ public class BossDoorTrigger : MonoBehaviour
         yield return StartCoroutine(PanCamera());
 
         if (doorUnlockSound != null)
-            AudioSource.PlayClipAtPoint(doorUnlockSound, Camera.main.transform.position, 1.0f);
+            SFXManager.instance.PlaySFX(doorUnlockSound);
+        //AudioSource.PlayClipAtPoint(doorUnlockSound, Camera.main.transform.position, 1.0f);
 
         if (unlockEffect != null)
             unlockEffect.Play();

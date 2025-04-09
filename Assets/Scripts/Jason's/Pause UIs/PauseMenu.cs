@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject exitPanel;
     public GameObject player;
 
-    public GameUIController gameUIController;
+    public ButtonUIController buttonUIController;
 
     [SerializeField]
     private KeyCode pauseKey = KeyCode.Escape;
@@ -18,10 +18,9 @@ public class PauseMenu : MonoBehaviour
     private MonoBehaviour[] playerScripts;
 
     [Header("Dialogue Systems to Pause")]
-    [SerializeField] private List<DialogueSystem> dialogueSystems = new List<DialogueSystem>(); // ✅ Shows in Inspector
+    [SerializeField] private List<DialogueSystem> dialogueSystems = new List<DialogueSystem>();
 
-    private List<DialogueSystem> pausedDialogues = new List<DialogueSystem>(); // Stores only active dialogues
-
+    private List<DialogueSystem> pausedDialogues = new List<DialogueSystem>();
     void Start()
     {
         if (settingsPanel != null) settingsPanel.SetActive(false);
@@ -33,9 +32,9 @@ public class PauseMenu : MonoBehaviour
             playerScripts = player.GetComponents<MonoBehaviour>();
         }
 
-        if (gameUIController != null)
+        if (buttonUIController != null)
         {
-            gameUIController.enabled = false;
+            buttonUIController.enabled = false;
         }
     }
 
@@ -66,12 +65,12 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         EnablePlayerScripts();
 
-        if (gameUIController != null)
+        if (buttonUIController != null)
         {
-            gameUIController.enabled = false;
+            buttonUIController.enabled = false;
         }
 
-        ResumePausedDialogues(); // ✅ Resume dialogues
+        ResumePausedDialogues();
     }
 
     void Pause()
@@ -82,12 +81,12 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         DisablePlayerScripts();
 
-        if (gameUIController != null)
+        if (buttonUIController != null)
         {
-            gameUIController.enabled = true;
+            buttonUIController.enabled = true;
         }
 
-        PauseActiveDialogues(); // ✅ Pause only active dialogues
+        PauseActiveDialogues();
     }
 
     void PauseActiveDialogues()
@@ -98,7 +97,7 @@ public class PauseMenu : MonoBehaviour
             if (dialogue.IsDialogueActive())
             {
                 dialogue.enabled = false;
-                pausedDialogues.Add(dialogue); // ✅ Store for resuming
+                pausedDialogues.Add(dialogue);
             }
         }
     }

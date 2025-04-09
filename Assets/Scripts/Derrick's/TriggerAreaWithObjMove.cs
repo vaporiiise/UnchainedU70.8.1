@@ -82,7 +82,8 @@ public class TriggerAreaWithObjMove : MonoBehaviour
         // 🎵 Play pop-up sound if assigned
         if (popUpSound != null && audioSource != null)
         {
-            audioSource.PlayOneShot(popUpSound);
+            SFXManager.instance.PlaySFX(popUpSound);
+            //audioSource.PlayOneShot(popUpSound);
         }
 
         yield return StartCoroutine(FadeAlpha(1f, fadeDuration));

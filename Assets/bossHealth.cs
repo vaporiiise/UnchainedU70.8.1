@@ -61,7 +61,12 @@ public class bossHealth : MonoBehaviour
             Debug.LogWarning("ShakeHealthBar script is not assigned!");
         }
 
-        audioSource.PlayOneShot(tookDamage);
+        if (tookDamage != null)
+        {
+            SFXManager.instance.PlaySFX(tookDamage);
+        }
+
+        //audioSource.PlayOneShot(tookDamage);
     }
 
     public void Die()

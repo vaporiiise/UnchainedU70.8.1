@@ -42,7 +42,8 @@ public class OpenWhenPlayerisNear : MonoBehaviour
             {
                 if (animationSound != null && !audioSource.isPlaying)
                 {
-                    audioSource.PlayOneShot(animationSound);
+                    SFXManager.instance.PlaySFX(animationSound);
+                    //audioSource.PlayOneShot(animationSound);
                 }
             }
             else 

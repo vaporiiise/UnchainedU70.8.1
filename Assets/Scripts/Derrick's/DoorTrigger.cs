@@ -57,7 +57,8 @@ public class DoorTrigger : MonoBehaviour
         
         if (doorUnlockSound != null)
         {
-            AudioSource.PlayClipAtPoint(doorUnlockSound, Camera.main.transform.position, 1.0f);
+            SFXManager.instance.PlaySFX(doorUnlockSound);
+            //AudioSource.PlayClipAtPoint(doorUnlockSound, Camera.main.transform.position, 1.0f);
         }
 
         if (unlockEffect != null)
