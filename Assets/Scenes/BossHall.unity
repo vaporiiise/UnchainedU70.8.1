@@ -7637,7 +7637,7 @@ MonoBehaviour:
   maxHealth: 200
   currentHealth: 0
   healthBar: {fileID: 1048897729}
-  sceneName: Credits Scene
+  sceneName: CutScene3
   shakeHealthBar: {fileID: 1048897731}
   tookDamage: {fileID: 8300000, guid: 88a0510633e286a4fb656d60fa5fcfd5, type: 3}
 --- !u!82 &281257299

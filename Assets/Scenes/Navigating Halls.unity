@@ -9765,7 +9765,7 @@ MonoBehaviour:
   triggerZone: {fileID: 444494477}
   interactionRadius: 0.44
   promptObject: {fileID: 387436189}
-  nextSceneName: BossHall
+  nextSceneName: CutScene2
   scaleSpeed: 5
   targetScale: {x: 1.96, y: 1.96, z: 1.96}
   popUpSound: {fileID: 8300000, guid: e5d51a1b97c29e04d98f7f625aa5a9ee, type: 3}

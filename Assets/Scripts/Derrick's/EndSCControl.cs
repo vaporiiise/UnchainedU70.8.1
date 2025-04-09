@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndSCControl : MonoBehaviour
 {
-    public Transform player; // Assign your player here
-    public Vector3 spawnPosition; // The position to send the player to
+    public Transform player; 
+    public Vector3 spawnPosition; 
 
     public void RestartGame()
     {
-        // Move player to the specified spawn position before restarting
         if (player != null)
         {
             player.position = spawnPosition;
@@ -24,11 +23,9 @@ public class EndSCControl : MonoBehaviour
             Destroy(GameManager.Instance.gameObject);
         }
 
-        // Reset game time scale and audio settings
         Time.timeScale = 1; 
         AudioListener.pause = false;
 
-        // Restart the current scene
         SceneManager.LoadScene(2); 
     }
 
