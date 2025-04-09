@@ -4,14 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ButtonSceneLoader : MonoBehaviour
 {
-    
-    
     public void LoadScene(string sceneName)
     {
        
         
 
-            SceneManager.LoadScene("Cutscene1");
+            SceneManager.LoadScene(sceneName);
         
     }
 }
